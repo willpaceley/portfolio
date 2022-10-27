@@ -1,3 +1,57 @@
-body {
-  background-color: red;
+/* --- UTILITY CLASSES --- */
+/* Hide an element visually, but remain accessible to screenreaders */
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
+
+/* --- GLOBAL STYLES --- */
+body {
+  font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: antiquewhite;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* --- CONTAINER --- */
+.container {
+  max-width: 70rem;
+  margin-inline: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid black;
+}
+
+/* --- NAVIGATION --- */
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* width: 33.33%; */
+}
+
+nav a {
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --- ABOUT --- */
