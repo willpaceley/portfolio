@@ -28,8 +28,8 @@ li {
 .container {
   max-width: 70rem;
   margin-inline: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /* --- NAVIGATION --- */
@@ -68,17 +68,32 @@ nav a:focus-visible {
   text-align: center;
   color: #fff;
   background-color: #000;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 #about h3 {
-  padding: 1rem 0;
   font-size: 2.5rem;
 }
 
 #about p {
   font-size: 1.05rem;
-  padding: 1.5rem 0;
+  font-weight: 300;
+}
+
+.hero-banner {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.tablet-photo {
+  display: none;
 }
 
 /* --- BUTTONS --- */
@@ -103,7 +118,27 @@ nav a:focus-visible {
 
 /* --- MEDIA QUERIES --- */
 @media only screen and (min-width: 64em) {
+  /* --- NAV --- */
   nav ul {
     gap: 3.5rem;
+  }
+
+  /* --- ABOUT --- */
+  #about {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .mobile-photo {
+    display: none;
+  }
+
+  .tablet-photo {
+    display: block;
+    width: 50%;
+  }
+
+  .btn {
+    width: 50%;
   }
 }
