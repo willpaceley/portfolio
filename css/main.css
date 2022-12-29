@@ -165,9 +165,8 @@ nav a:focus-visible {
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .inner-card {
@@ -181,6 +180,8 @@ nav a:focus-visible {
 }
 
 .card img {
+  max-height: 15rem;
+  object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -194,6 +195,10 @@ nav a:focus-visible {
 @media only screen and (min-width: 27em) {
   .mobile-photo {
     width: 55%;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -224,6 +229,6 @@ nav a:focus-visible {
 
   /* --- CARDS --- */
   .card-container {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
