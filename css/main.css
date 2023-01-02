@@ -2,6 +2,7 @@
 /* Shadow pallete generator by Josh W. Comeau (thank you <3) */
 :root {
   --accent-color: #06c;
+  --transition-timing: 0.2s;
   --shadow-color: 0deg 0% 59%;
   --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.25),
     0.5px 0.9px 1.3px -0.8px hsl(var(--shadow-color) / 0.34),
@@ -73,6 +74,7 @@ nav a {
   font-weight: 300;
   color: rgb(227, 227, 227);
   text-decoration: none;
+  transition: var(--transition-timing);
 }
 
 nav a:hover {
@@ -130,6 +132,7 @@ nav a:focus-visible {
   border-radius: 10px;
   color: #fff;
   text-decoration: none;
+  transition: var(--transition-timing);
 }
 
 .btn:hover,
@@ -165,6 +168,12 @@ nav a:focus-visible {
   box-shadow: var(--shadow-elevation-low);
   border-radius: 12px;
   padding-bottom: 1rem;
+  transition: all var(--transition-timing);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-elevation-medium);
+  transform: scale(1.02);
 }
 
 .card-container {
@@ -246,6 +255,12 @@ form textarea::placeholder {
   color: #fff;
   border: 0;
   border-radius: 8px;
+  transition: var(--transition-timing);
+}
+
+#submit:hover,
+#submit:focus {
+  background-color: #007af5;
 }
 
 /* --- FOOTER --- */
