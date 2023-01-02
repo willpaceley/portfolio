@@ -149,6 +149,35 @@
       </section>
       <section id="contact" tabindex="0">
         <h2>Contact Me</h2>
+        <div class="form-wrapper">
+          <form action="https://formspree.io/f/mdovoanw" method="POST">
+            <label for="name" class="visually-hidden">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              autocomplete="name"
+              required
+            />
+            <label for="email" class="visually-hidden">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+            <label for="message" class="visually-hidden">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write me a message!"
+            ></textarea>
+            <input type="submit" id="submit" value="Contact" />
+          </form>
+        </div>
       </section>
     </main>
     <footer>
