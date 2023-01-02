@@ -3,6 +3,9 @@
 
 function init() {
   console.log('DOM Content Loaded! Init just fired.');
+  const copyright = document.querySelector('.copyright');
+  const year = new Date().getFullYear();
+  copyright.textContent = `Copyright © ${year} Will Paceley`;
 }
 
 document.addEventListener('DOMContentLoaded', init);
