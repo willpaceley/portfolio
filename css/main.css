@@ -5,6 +5,9 @@
   --swift: #ef6c00;
   --swift-ui: #d84315;
   --kotlin: #9c27b0;
+  --javascript: #f7df1e;
+  --react-native: #61dafb;
+  --discord-js: #379c6f;
   --shadow-color: 0deg 0% 11%;
   --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.3),
     0.5px 0.9px 1.3px -0.9px hsl(var(--shadow-color) / 0.39),
@@ -213,7 +216,7 @@ nav a:focus-visible {
 }
 
 .card a {
-  color: rgb(32, 116, 199);
+  color: rgb(36, 145, 254);
   text-decoration: none;
 }
 
@@ -242,6 +245,20 @@ nav a:focus-visible {
 
 .pill.kotlin {
   background-color: var(--kotlin);
+}
+
+.pill.javascript {
+  background-color: var(--javascript);
+  color: #000;
+}
+
+.pill.react-native {
+  background-color: var(--react-native);
+  color: #000;
+}
+
+.pill.discord-js {
+  background-color: var(--discord-js);
 }
 
 /* --- CONTACT FORM --- */
