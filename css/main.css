@@ -2,6 +2,9 @@
 /* Shadow pallete generator by Josh W. Comeau (thank you <3) */
 :root {
   --accent-color: #06c;
+  --swift: #ef6c00;
+  --swift-ui: #d84315;
+  --kotlin: #9c27b0;
   --shadow-color: 0deg 0% 11%;
   --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.3),
     0.5px 0.9px 1.3px -0.9px hsl(var(--shadow-color) / 0.39),
@@ -210,8 +213,35 @@ nav a:focus-visible {
 }
 
 .card a {
-  color: var(--accent-color);
+  color: rgb(32, 116, 199);
   text-decoration: none;
+}
+
+/* --- PILLS --- */
+.pill-container {
+  padding-inline: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  border-radius: 100px;
+  padding: 0.1rem 1rem;
+  min-width: 5rem;
+}
+
+.pill.swift {
+  background-color: var(--swift);
+}
+
+.pill.swift-ui {
+  background-color: var(--swift-ui);
+}
+
+.pill.kotlin {
+  background-color: var(--kotlin);
 }
 
 /* --- CONTACT FORM --- */
