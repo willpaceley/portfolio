@@ -184,13 +184,19 @@ nav a:focus-visible {
 }
 
 .inner-card {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
 .inner-card p {
   padding-inline: 1rem;
+}
+
+.inner-card a:hover {
+  text-decoration: underline;
 }
 
 .card h3 {
