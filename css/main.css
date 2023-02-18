@@ -230,35 +230,35 @@ nav a:focus-visible {
 }
 
 .pill {
+  color: #d5d5d5;
+  border: 1.5px solid #fff;
   border-radius: 100px;
   padding: 0.1rem 1rem;
   min-width: 5rem;
 }
 
 .pill.swift {
-  background-color: var(--swift);
+  border-color: var(--swift);
 }
 
 .pill.swift-ui {
-  background-color: var(--swift-ui);
+  border-color: var(--swift-ui);
 }
 
 .pill.kotlin {
-  background-color: var(--kotlin);
+  border-color: var(--kotlin);
 }
 
 .pill.javascript {
-  background-color: var(--javascript);
-  color: #000;
+  border-color: var(--javascript);
 }
 
 .pill.react-native {
-  background-color: var(--react-native);
-  color: #000;
+  border-color: var(--react-native);
 }
 
 .pill.discord-js {
-  background-color: var(--discord-js);
+  border-color: var(--discord-js);
 }
 
 /* --- CONTACT FORM --- */
