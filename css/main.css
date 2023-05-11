@@ -1,6 +1,7 @@
 /* --- CSS Variables --- */
 /* Shadow pallete generator by Josh W. Comeau (thank you <3) */
 :root {
+  --secondary-color: #ccc;
   --accent-color: #06c;
   --swift: #ef6c00;
   --swift-ui: #d84315;
@@ -218,6 +219,12 @@ nav a:focus-visible {
 .card a {
   color: rgb(36, 145, 254);
   text-decoration: none;
+}
+
+.technologies {
+  color: var(--secondary-color);
+  /* font-style: italic; */
+  font-weight: 300;
 }
 
 /* --- PILLS --- */
