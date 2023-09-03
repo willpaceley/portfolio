@@ -157,7 +157,6 @@ nav a:focus-visible {
 
 /* --- PROJECTS --- */
 #projects {
-  text-align: center;
   padding: 0 1.5rem 1.5rem 1.5rem;
   background-color: #111;
   color: white;
@@ -207,6 +206,7 @@ nav a:focus-visible {
 }
 
 .card h3 {
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -217,8 +217,24 @@ nav a:focus-visible {
 }
 
 .card a {
+  text-align: center;
   color: rgb(36, 145, 254);
   text-decoration: none;
+}
+
+.app-store-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.app-store-link {
+  display: inline-block;
+  overflow: hidden;
+  width: 12.5rem;
+}
+
+.app-store-image {
+  width: 12.5rem;
 }
 
 .technologies {
